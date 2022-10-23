@@ -1,3 +1,8 @@
+package Safer;
+
+import Safer.Key;
+import Safer.Operations;
+
 import java.util.Random;
 
 public class SAFER {

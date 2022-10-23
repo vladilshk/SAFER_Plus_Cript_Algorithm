@@ -1,3 +1,5 @@
+package Safer;
+
 import java.util.Random;
 
 
@@ -73,7 +75,7 @@ public class Key {
     //test method to get keys
     public void keysToString(){
         for(int keyNum = 0; keyNum < keySet.length; keyNum++) {
-            System.out.println("Key " + (keyNum + 1) + ":");
+            System.out.println("Safer.Key " + (keyNum + 1) + ":");
             for (int i = 0; i < keySet[keyNum].length; i++) {
                 System.out.print(keySet[keyNum][i] + "; ");
             }
