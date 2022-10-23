@@ -11,9 +11,9 @@ public class ImageConv {
 
 
     public static int[][] getImage() throws IOException {
-        BufferedImage bufferedImage = ImageIO.read(new File("/home/voldi/Рабочий стол/5 semester/Крипта/SAFER_Plus_Cript_Algorithm/src/vova.png"));
+        BufferedImage bufferedImage = ImageIO.read(new File("/home/voldi/Рабочий стол/5 semester/Крипта/SAFER_Plus_Cript_Algorithm/src/pepaPig.bmp"));
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
-        ImageIO.write(bufferedImage, "jpg", bos );
+        ImageIO.write(bufferedImage, "bmp", bos );
         byte [] data = bos.toByteArray();
         int[][] blockImage = new int[data.length/16 + 1][16];
 
@@ -55,7 +55,7 @@ public class ImageConv {
 
         ByteArrayInputStream bis = new ByteArrayInputStream(data);
         BufferedImage bImage2 = ImageIO.read(bis);
-        ImageIO.write(bImage2, "jpg", new File(  name + ".jpg") );
+        ImageIO.write(bImage2, "bmp", new File(  name + ".bmp") );
         System.out.println("image created");
     }
 }
